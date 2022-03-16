@@ -10,19 +10,16 @@ public:
         {
             if (state == 0) 
             {
-                // go down
                 zigzag[row++] += s[i++];
                 if (row == numRows)
                 {
                     row = numRows - 2;
-                    state = 1; // go up
+                    state = 1; 
                 }
             } 
             else
             {
-                // state == 1
-                // go up
-                // row from 1 to numRows - 2
+          
                 if (row >= 1)
                 {
                     zigzag[row--] += s[i++];
