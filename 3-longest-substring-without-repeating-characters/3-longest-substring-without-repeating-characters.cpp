@@ -2,7 +2,7 @@ class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
     int rs = 0;
-    unordered_map<int, int> h;
+    vector<int> h(128);
     int l = 0;
     int r = 0;
     while (r < s.length())
