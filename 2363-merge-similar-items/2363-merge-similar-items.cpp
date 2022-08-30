@@ -1,7 +1,7 @@
 class Solution {
 public:
     vector<vector<int>> mergeSimilarItems(vector<vector<int>>& arr1, vector<vector<int>>& arr2) {
-         map<int,int>mp;    //value -->sum of that all values weight
+         map<int,int>mp;    
     
         for(int i=0;i<arr1.size();i++)
         {
