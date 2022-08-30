@@ -1,12 +1,11 @@
 class NumberContainers {
 public:
-    unordered_map<int,set<int>>map_nums; //(number,{index}) (used set in place of unordered set to get minimum quickly )
-    unordered_map<int,int>map_index;// (index,number)
+    unordered_map<int,set<int>>map_nums; 
+    unordered_map<int,int>map_index;
     NumberContainers() {
         
     }
     void change(int index, int number) {
-         //if index already exists we have to change the map_index at given "index"
          if(map_index.find(index)!=map_index.end())
          {
              int num=map_index[index];  
