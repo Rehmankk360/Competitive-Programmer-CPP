@@ -1,7 +1,6 @@
 class Solution {
 public:
   
-// charecter shifting function
     char shift(char a, int n){
         int i = a - 'a';
         i = (i+n)%26;
