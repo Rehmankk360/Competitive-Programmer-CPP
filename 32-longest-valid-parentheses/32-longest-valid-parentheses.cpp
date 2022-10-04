@@ -7,7 +7,7 @@ public:
     	stack<int> st;
 	    st.push(-1);
 
-    	for(int i = 0; i < s.size(); i++)
+    	for(int i =0; i < s.size(); i++)
 	    	if(s[i] == '(')
                 st.push(i);
 
